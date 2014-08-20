@@ -1,0 +1,25 @@
+<div class="centered col-lg-4 col-md-6 col-sm-8 col-xs-12">
+    <form data-ng-submit="register()" name="signupForm" role="form" class="form-horizontal">
+        <div class="avatar"></div>
+        <div class="form-group" ng-class="{'has-error has-feedback': !signupForm.username.$valid && signupForm.username.$dirty }">
+            <label class="control-label sr-only" for="input-username">Hidden label</label>
+            <input data-ng-model="username" class="form-control" type="text" name="username" id="input-username" required />
+            <span data-ng-show="!signupForm.username.$valid && signupForm.username.$dirty"
+                  class="glyphicon glyphicon-remove form-control-feedback"></span>
+        </div>
+        <div class="form-group">
+            <input data-ng-model="password" class="form-control" type="password" name="password" id="input-password"
+                   required="required" />
+        </div>
+        <div class="form-group" ng-class="{'has-warning has-feedback': !signupForm.repassword.$valid && signupForm.repassword.$dirty}">
+            <input data-ng-model="repassword" data-same-as="password" class="form-control" type="password"
+                   name="repassword" id="input-repassword" required="required" />
+            <span data-ng-show="!signupForm.repassword.$valid && signupForm.repassword.$dirty"
+                  class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+        </div>
+        <div class="form-group">
+            <button data-ng-disabled="signupForm.$invalid" type="submit" class="btn btn-default btn-primary btn-lg btn-block">Sign Up</button>
+        </div>
+    </form>
+
+</div>

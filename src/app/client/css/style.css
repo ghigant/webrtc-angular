@@ -1,0 +1,15 @@
+body {
+    padding-top: 60px;
+}
+.avatar{
+    width: 120px;height: 120px;
+    margin: 10px auto 30px;
+    border-radius: 100%;
+    border: 2px solid #aaa;
+    background-size: cover;
+}
+
+.centered {
+    float: none;
+    margin: 0 auto;
+}
