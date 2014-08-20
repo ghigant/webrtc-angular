@@ -9,4 +9,4 @@ Get Started
 > * bower install
 > * grunt devel:init
 
-To start server use npm start or node index.js in project root directory.
+To start server use **npm start** or **node index.js** in project root directory.
